@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D4DC8892A6597D400237619 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DC8882A6597D300237619 /* Language.swift */; };
+		3D4DC88B2A65985700237619 /* LanguagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DC88A2A65985700237619 /* LanguagePickerView.swift */; };
+		3D4DC88D2A65990A00237619 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DC88C2A65990A00237619 /* Gender.swift */; };
+		3D4DC88F2A659CC600237619 /* InterestedGenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DC88E2A659CC600237619 /* InterestedGenderView.swift */; };
 		3D5C35A42A41908E0069A2EF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C35A32A41908E0069A2EF /* ProfileView.swift */; };
 		3D5C35A62A4190C60069A2EF /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C35A52A4190C60069A2EF /* MessagesView.swift */; };
 		3D5C35A82A4190F70069A2EF /* LiveStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5C35A72A4190F70069A2EF /* LiveStream.swift */; };
@@ -49,10 +53,15 @@
 		3DA08B932A4057E700A747C6 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA08B922A4057E700A747C6 /* SignUpView.swift */; };
 		3DA08B952A40AE2F00A747C6 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA08B942A40AE2F00A747C6 /* Place.swift */; };
 		3DA08B972A40AF7E00A747C6 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA08B962A40AF7E00A747C6 /* Description.swift */; };
-		3DA08B992A40DE4100A747C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DA08B982A40DE4100A747C6 /* GoogleService-Info.plist */; };
+		3DA6A0752A655474005F6202 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DA6A0742A655474005F6202 /* GoogleService-Info.plist */; };
+		3DA6A0782A656BA6005F6202 /* Popovers in Frameworks */ = {isa = PBXBuildFile; productRef = 3DA6A0772A656BA6005F6202 /* Popovers */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D4DC8882A6597D300237619 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		3D4DC88A2A65985700237619 /* LanguagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePickerView.swift; sourceTree = "<group>"; };
+		3D4DC88C2A65990A00237619 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		3D4DC88E2A659CC600237619 /* InterestedGenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestedGenderView.swift; sourceTree = "<group>"; };
 		3D5C35A32A41908E0069A2EF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		3D5C35A52A4190C60069A2EF /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		3D5C35A72A4190F70069A2EF /* LiveStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStream.swift; sourceTree = "<group>"; };
@@ -81,7 +90,7 @@
 		3DA08B922A4057E700A747C6 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		3DA08B942A40AE2F00A747C6 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		3DA08B962A40AF7E00A747C6 /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
-		3DA08B982A40DE4100A747C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3DA6A0742A655474005F6202 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +104,7 @@
 				3D63E3BB2A3F957800C568B4 /* RiveRuntime in Frameworks */,
 				3D63E3BE2A3F971F00C568B4 /* FirebaseAnalytics in Frameworks */,
 				3D63E3C62A3F971F00C568B4 /* FirebaseAppCheck in Frameworks */,
+				3DA6A0782A656BA6005F6202 /* Popovers in Frameworks */,
 				3D63E3CC2A3F971F00C568B4 /* FirebaseFirestoreSwift in Frameworks */,
 				3D63E3CA2A3F971F00C568B4 /* FirebaseFirestore in Frameworks */,
 				3D63E3D62A3F971F00C568B4 /* FirebaseStorage in Frameworks */,
@@ -137,7 +147,9 @@
 				3D63E3A02A3F93BA00C568B4 /* Happy.xcdatamodeld */,
 				3D63E39B2A3F93BA00C568B4 /* Preview Content */,
 				3D63E3AA2A3F940700C568B4 /* SelectGenderView.swift */,
+				3D4DC88E2A659CC600237619 /* InterestedGenderView.swift */,
 				3D63E3AC2A3F942300C568B4 /* SelectInterestsView.swift */,
+				3D4DC88A2A65985700237619 /* LanguagePickerView.swift */,
 				3D63E3AE2A3F945400C568B4 /* AddPlacesView.swift */,
 				3D63E3B02A3F948000C568B4 /* SelfDescriptionView.swift */,
 				3D63E3B22A3F94A800C568B4 /* BioView.swift */,
@@ -149,7 +161,7 @@
 				3D5C35A52A4190C60069A2EF /* MessagesView.swift */,
 				3D5C35A72A4190F70069A2EF /* LiveStream.swift */,
 				3D5C35A92A4191160069A2EF /* HomeView.swift */,
-				3DA08B982A40DE4100A747C6 /* GoogleService-Info.plist */,
+				3DA6A0742A655474005F6202 /* GoogleService-Info.plist */,
 			);
 			path = Happy;
 			sourceTree = "<group>";
@@ -173,6 +185,8 @@
 				3D5C35B32A420FA70069A2EF /* FirestorePlace.swift */,
 				3DA08B962A40AF7E00A747C6 /* Description.swift */,
 				3D5C35B52A4210670069A2EF /* FirestoreDescription.swift */,
+				3D4DC8882A6597D300237619 /* Language.swift */,
+				3D4DC88C2A65990A00237619 /* Gender.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -209,6 +223,7 @@
 				3D63E3D12A3F971F00C568B4 /* FirebaseInAppMessagingSwift-Beta */,
 				3D63E3D32A3F971F00C568B4 /* FirebaseMessaging */,
 				3D63E3D52A3F971F00C568B4 /* FirebaseStorage */,
+				3DA6A0772A656BA6005F6202 /* Popovers */,
 			);
 			productName = Happy;
 			productReference = 3D63E3922A3F93B900C568B4 /* Happy.app */;
@@ -242,6 +257,7 @@
 				3D63E3B62A3F952B00C568B4 /* XCRemoteSwiftPackageReference "WrappingHStack" */,
 				3D63E3B92A3F957800C568B4 /* XCRemoteSwiftPackageReference "rive-ios" */,
 				3D63E3BC2A3F971F00C568B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3DA6A0762A656BA6005F6202 /* XCRemoteSwiftPackageReference "Popovers" */,
 			);
 			productRefGroup = 3D63E3932A3F93B900C568B4 /* Products */;
 			projectDirPath = "";
@@ -258,8 +274,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D63E39D2A3F93BA00C568B4 /* Preview Assets.xcassets in Resources */,
-				3DA08B992A40DE4100A747C6 /* GoogleService-Info.plist in Resources */,
 				3D63E39A2A3F93BA00C568B4 /* Assets.xcassets in Resources */,
+				3DA6A0752A655474005F6202 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,13 +302,17 @@
 				3DA08B932A4057E700A747C6 /* SignUpView.swift in Sources */,
 				3D5C35A82A4190F70069A2EF /* LiveStream.swift in Sources */,
 				3DA08B952A40AE2F00A747C6 /* Place.swift in Sources */,
+				3D4DC88B2A65985700237619 /* LanguagePickerView.swift in Sources */,
 				3D63E3B52A3F94C000C568B4 /* ProfileImagePickerView.swift in Sources */,
 				3D5C35AC2A4195830069A2EF /* SignInView.swift in Sources */,
 				3D63E3D92A3F979400C568B4 /* User.swift in Sources */,
+				3D4DC88D2A65990A00237619 /* Gender.swift in Sources */,
 				3D5C35B22A4205230069A2EF /* FirestoreInterest.swift in Sources */,
 				3D63E3AD2A3F942300C568B4 /* SelectInterestsView.swift in Sources */,
+				3D4DC8892A6597D400237619 /* Language.swift in Sources */,
 				3D63E3AB2A3F940700C568B4 /* SelectGenderView.swift in Sources */,
 				3D63E3B32A3F94A800C568B4 /* BioView.swift in Sources */,
+				3D4DC88F2A659CC600237619 /* InterestedGenderView.swift in Sources */,
 				3D5C35AA2A4191160069A2EF /* HomeView.swift in Sources */,
 				3D5C35B62A4210670069A2EF /* FirestoreDescription.swift in Sources */,
 			);
@@ -521,6 +541,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		3DA6A0762A656BA6005F6202 /* XCRemoteSwiftPackageReference "Popovers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aheze/Popovers";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -598,6 +626,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3D63E3BC2A3F971F00C568B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		3DA6A0772A656BA6005F6202 /* Popovers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DA6A0762A656BA6005F6202 /* XCRemoteSwiftPackageReference "Popovers" */;
+			productName = Popovers;
 		};
 /* End XCSwiftPackageProductDependency section */
 

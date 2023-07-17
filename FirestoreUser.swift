@@ -13,7 +13,7 @@ struct FirestoreUser{
     var lastName: String
     var email: String
     var password: String
-    var gender: String
+    var gender: Gender
     var interests: [FirestoreInterest]
     var places: [FirestorePlace]
     var descriptions: [FirestoreDescription]
@@ -23,7 +23,8 @@ struct FirestoreUser{
     var weight: Double
     var birthday : Date
     var nationality : String
-    
+    var interestedGender : Gender
+    var languages : [Language]
     private enum CodingKeys: String, CodingKey {
            case id
            case firstName
@@ -40,6 +41,8 @@ struct FirestoreUser{
            case weight
            case birthday
            case nationality
+        case interestedGender
+        case languages
        }
 }
 
@@ -51,7 +54,7 @@ extension FirestoreUser: Decodable {
         lastName = try container.decode(String.self, forKey: .lastName)
         email = try container.decode(String.self, forKey: .email)
         password = try container.decode(String.self, forKey: .password)
-        gender = try container.decode(String.self, forKey: .gender)
+        gender = try container.decode(Gender.self, forKey: .gender)
         interests = try container.decode([FirestoreInterest].self, forKey: .interests)
         places = try container.decode([FirestorePlace].self, forKey: .places)
         descriptions = try container.decode([FirestoreDescription].self, forKey: .descriptions)
@@ -61,6 +64,8 @@ extension FirestoreUser: Decodable {
         weight = try container.decode(Double.self, forKey: .weight)
         birthday = try container.decode(Date.self, forKey: .birthday)
         nationality = try container.decode(String.self, forKey: .nationality)
+        interestedGender = try container.decode(Gender.self, forKey: .interestedGender)
+        languages = try container.decode([Language].self, forKey: .languages)
     }
 }
 
@@ -82,6 +87,8 @@ extension FirestoreUser: Encodable {
         try container.encode(weight, forKey: .weight)
         try container.encode(birthday, forKey: .birthday)
         try container.encode(nationality, forKey: .nationality)
+        try container.encode(interestedGender, forKey: .interestedGender)
+        try container.encode(languages, forKey: .languages)
     }
 }
 

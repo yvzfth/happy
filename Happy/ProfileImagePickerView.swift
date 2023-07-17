@@ -148,7 +148,7 @@ struct ProfileImagePickerView: View {
                             FirestoreSubcategory(name: subcategory.name)
                         }
                         return FirestoreInterest(name: interest.name, subcategories: firestoreSubcategories)
-                    }, places: places.map {FirestorePlace(name: $0)}, descriptions: descriptions.map {  FirestoreDescription(name: $0) } , bio: user.bio, images: [], height: user.height, weight: user.weight, birthday: user.birthday, nationality: user.nationality )
+                    }, places: places.map {FirestorePlace(name: $0)}, descriptions: descriptions.map {  FirestoreDescription(name: $0) } , bio: user.bio, images: [], height: user.height, weight: user.weight, birthday: user.birthday, nationality: user.nationality, interestedGender: user.interestedGender, languages: user.languages )
                     
                     //DATABASE
                     try ref.setData(from: firestoreUser, encoder: Firestore.Encoder(), completion: { (error) in
